@@ -1,0 +1,170 @@
+/* Fonts */
+/* libre-franklin-300 - latin */
+@font-face {
+  font-family: 'Libre Franklin';
+  font-style: normal;
+  font-weight: 300;
+  src: local(''),
+       url('./fonts/libre-franklin-v13-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('./fonts/libre-franklin-v13-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* libre-franklin-regular - latin */
+@font-face {
+  font-family: 'Libre Franklin';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('./fonts/libre-franklin-v13-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('./fonts/libre-franklin-v13-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+
+/* libre-franklin-600 - latin */
+@font-face {
+  font-family: 'Libre Franklin';
+  font-style: normal;
+  font-weight: 600;
+  src: local(''),
+       url('./fonts/libre-franklin-v13-latin-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('./fonts/libre-franklin-v13-latin-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* libre-franklin-700 - latin */
+@font-face {
+  font-family: 'Libre Franklin';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''),
+       url('./fonts/libre-franklin-v13-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('./fonts/libre-franklin-v13-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* Custom Properties */
+:root {
+    --primary-blue: hsl(223, 87%, 63%);
+    --secondary-pale-blue: hsl(223, 100%, 88%);
+    --secondary-light-red: hsl(354, 100%, 66%);
+    --neutral-gray: hsl(0, 0%, 59%);
+    --neutral-very-dark: hsl(209, 33%, 12%);
+}
+
+/* Globals */
+*, 
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 1.25rem;
+}
+
+body {
+    text-align: center;
+    font-family: 'Libre Franklin';
+    margin: 0;
+}
+
+p { 
+    color: var(--neutral-very-dark);
+    font-weight: 300;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Layout */
+.page-wrapper {
+    padding: 0 2rem;
+}
+
+
+/* Page header */
+.page-wrapper .site-logo {
+    margin-top: 5rem;
+}
+
+.page__header-title {
+    margin-top: 3rem;
+    font-weight: 300;
+    color: var(--neutral-gray);
+}
+
+.page__header-title strong {
+    font-weight: 700;
+    color: var(--neutral-very-dark);
+}
+
+
+/* Page main form */
+.page__form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 3rem;
+}
+
+.page__form input {
+    all: unset;
+    display: block;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 3rem;
+    font-weight: 400;
+}
+
+.page__form input[type="text"] {
+    padding-left: 4ch;
+    text-align: left;
+    color: var(--secondary-pale-blue);
+    border: 2px solid var(--secondary-pale-blue);
+}
+
+.page__form input[type="submit"] {
+    color: white;
+    font-weight: 600;
+    background-color: var(--primary-blue);
+    border: 2px solid var(--primary-blue);
+    box-shadow: 2px 2px 15px -2px rgb(0, 0, 0, .7);
+}
+
+
+/* Page main image */
+.page__image {
+    width: 100%;
+    margin-top: 5rem;
+}
+
+
+/* Page footer */
+.page__social-media {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 6rem;
+}
+
+.page__social-media div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary-blue);
+    font-size: 1.3rem;
+    width: 2em;
+    height: 2em;
+    border-radius: 2em;
+    border: 2px solid hsl(0, 0%, 59%, .3);
+}
+
+.page__footer {
+    color: var(--neutral-gray);
+    font-size: 0.9rem;
+    margin: 3rem 0 4rem 0;
+}
+
+@media only screen and (min-width: 768px) {
+    
+}
