@@ -40,6 +40,61 @@
        url('./fonts/libre-franklin-v13-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
+
+/* RESET */
+/* Box sizing rules */
+*, 
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+/* Remove default margin */
+body,
+h1,
+p {
+  margin: 0;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+
 /* COLOR PALETTE */
 :root {
     --primary-blue: hsl(223, 87%, 63%);
@@ -50,12 +105,6 @@
 }
 
 /* GLOBALS & LAYOUT */
-*, 
-*::before,
-*::after {
-    box-sizing: inherit;
-}
-
 html {
     box-sizing: border-box;
     font-size: 1.25rem;
@@ -97,6 +146,7 @@ h1 strong {
 
 /* HEADER */
 .site-logo {
+    display: inline;
     margin-top: 81px;
     margin-bottom: 32px;
     width: 56px;
@@ -142,7 +192,6 @@ h1 strong {
 
 /* ILLUSTRATION */
 .main-section__illustration {
-    width: 100%;
     margin-top: 5rem;
 }
 
@@ -174,7 +223,7 @@ h1 strong {
     border: 2px solid hsl(0, 0%, 59%, .3);
 }
 
-@media screen and (min-width: 568px) {
+@media screen and (min-width: 600px) {
     /* HEADER */
     .site-logo {
         margin-top: 80px;
