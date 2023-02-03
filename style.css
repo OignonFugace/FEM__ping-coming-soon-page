@@ -142,7 +142,7 @@ h1 {
 }
 
 h1 strong {
-    font-weight: 600;
+    font-weight: 700;
     color: var(--neutral-very-dark);
 }
 
@@ -181,7 +181,7 @@ h1 strong {
     font-weight: 400;
 }
 
-.main-section__form input[type="text"] {
+.main-section__form input[type="email"] {
     padding-left: 32px;
     text-align: left;
     color: var(--secondary-blue);
