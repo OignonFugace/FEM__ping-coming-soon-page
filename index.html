@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <script src="https://kit.fontawesome.com/1c9b698be3.js" crossorigin="anonymous"></script>
 
-
   <link rel="stylesheet" href="./style.css">
-  
+  <script defer src="./script.js"></script>
+
   <title>Frontend Mentor | Ping coming soon page</title>
 </head>
 <body>
@@ -19,10 +19,10 @@
     
     <p>Subscribe and get notified</p>
     
-    <div class="page__form">
-      <input type="text" placeholder="Your email address...">
-      <input type="submit" name="" id="" value="Notify Me">
-    </div>
+    <form class="page__form" id="page__form">
+      <input type="text" placeholder="Your email address..." id="form__user-input">
+      <input type="submit" name="submit" id="submit" value="Notify Me">
+    </form>
 
     <img src="./images/illustration-dashboard.png" alt="The ping app screenshot" class="page__image">
 
