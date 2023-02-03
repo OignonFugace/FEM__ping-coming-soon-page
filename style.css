@@ -97,23 +97,26 @@ select {
 
 /* COLOR PALETTE */
 :root {
-    --primary-blue: hsl(223, 87%, 63%);
-    --secondary-pale-blue: hsl(223, 100%, 88%);
+    --bg-color: #ffffff;
+    --primary-blue: #4C7BF3;
+    --primary-blue-15: hsla(223, 87%, 63%, 15%);
+    --secondary-blue: #B8C7ED;
+    --secondary-pale-blue: #C2D3FF;
     --secondary-light-red: hsl(354, 100%, 66%);
-    --neutral-gray: hsl(0, 0%, 59%);
-    --neutral-very-dark: hsl(209, 33%, 12%);
+    --neutral-gray: #969696;
+    --neutral-very-dark: #15202A;
 }
 
 /* GLOBALS & LAYOUT */
 html {
     box-sizing: border-box;
-    font-size: 1.25rem;
 }
 
 body {
-    text-align: center;
+    background-color: var(--bg-color);
     font-family: 'Libre Franklin';
     margin: 0;
+    text-align: center;
 }
 
 #site-wrapper {
@@ -156,29 +159,34 @@ h1 strong {
 /* FORM */
 .main-section__text {
     font-size: 12px;
+    margin-top: 15px;
 }
 
 .main-section__form {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
-    margin-top: 3rem;
+    gap: 10px;
+    width: 85%;
+    margin: 32px auto 0;
+    /* margin-top: 32px; */
 }
 
 .main-section__form input {
     all: unset;
     display: block;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
     border-radius: 3rem;
+    font-size: 13px;
+    line-height: 20px;
     font-weight: 400;
 }
 
 .main-section__form input[type="text"] {
-    padding-left: 4ch;
+    padding-left: 32px;
     text-align: left;
-    color: var(--secondary-pale-blue);
-    border: 2px solid var(--secondary-pale-blue);
+    color: var(--secondary-blue);
+    border: 1px solid var(--secondary-pale-blue);
 }
 
 .main-section__form input[type="submit"] {
@@ -192,15 +200,15 @@ h1 strong {
 
 /* ILLUSTRATION */
 .main-section__illustration {
-    margin-top: 5rem;
+    margin-top: 72px;
 }
 
 
 /* FOOTER */
-.footer {
+.footer p {
     color: var(--neutral-gray);
-    font-size: 0.9rem;
-    margin: 3rem 0 4rem 0;
+    font-size: 10px;
+    margin-top: 27px;
 }
 
 /* SOCIAL MEDIA ICONS */
@@ -208,7 +216,7 @@ h1 strong {
     display: flex;
     gap: 1rem;
     justify-content: center;
-    margin-top: 6rem;
+    margin-top: 120px;
 }
 
 .footer__social-media-icons div {
@@ -216,12 +224,13 @@ h1 strong {
     justify-content: center;
     align-items: center;
     color: var(--primary-blue);
-    font-size: 1.3rem;
-    width: 2em;
-    height: 2em;
-    border-radius: 2em;
-    border: 2px solid hsl(0, 0%, 59%, .3);
+    font-size: 1rem;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 2rem;
+    border: 1px solid var(--primary-blue-15);
 }
+
 
 @media screen and (min-width: 600px) {
     /* HEADER */
