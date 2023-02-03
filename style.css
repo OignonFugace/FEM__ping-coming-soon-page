@@ -40,7 +40,7 @@
        url('./fonts/libre-franklin-v13-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
-/* Custom Properties */
+/* COLOR PALETTE */
 :root {
     --primary-blue: hsl(223, 87%, 63%);
     --secondary-pale-blue: hsl(223, 100%, 88%);
@@ -49,7 +49,7 @@
     --neutral-very-dark: hsl(209, 33%, 12%);
 }
 
-/* Globals */
+/* GLOBALS & LAYOUT */
 *, 
 *::before,
 *::after {
@@ -67,6 +67,12 @@ body {
     margin: 0;
 }
 
+#site-wrapper {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
 p { 
     color: var(--neutral-very-dark);
     font-weight: 300;
@@ -76,38 +82,33 @@ a {
     text-decoration: none;
 }
 
-/* Layout */
-.page-wrapper {
-    padding: 0 2rem;
-}
-
-
-/* Page header */
-.page-wrapper .site-logo {
-    margin-top: 5rem;
-}
-
-.page__header-title {
+h1 {
     margin-top: 3rem;
     font-weight: 300;
     color: var(--neutral-gray);
 }
 
-.page__header-title strong {
+h1 strong {
     font-weight: 700;
     color: var(--neutral-very-dark);
 }
 
 
-/* Page main form */
-.page__form {
+/* HEADER */
+.site-logo {
+    margin-top: 5rem;
+}
+
+
+/* FORM */
+.main-section__form {
     display: flex;
     flex-direction: column;
     gap: 1rem;
     margin-top: 3rem;
 }
 
-.page__form input {
+.main-section__form input {
     all: unset;
     display: block;
     padding-top: 1rem;
@@ -116,14 +117,14 @@ a {
     font-weight: 400;
 }
 
-.page__form input[type="text"] {
+.main-section__form input[type="text"] {
     padding-left: 4ch;
     text-align: left;
     color: var(--secondary-pale-blue);
     border: 2px solid var(--secondary-pale-blue);
 }
 
-.page__form input[type="submit"] {
+.main-section__form input[type="submit"] {
     color: white;
     font-weight: 600;
     background-color: var(--primary-blue);
@@ -132,22 +133,29 @@ a {
 }
 
 
-/* Page main image */
-.page__image {
+/* ILLUSTRATION */
+.main-section__illustration {
     width: 100%;
     margin-top: 5rem;
 }
 
 
-/* Page footer */
-.page__social-media {
+/* FOOTER */
+.footer {
+    color: var(--neutral-gray);
+    font-size: 0.9rem;
+    margin: 3rem 0 4rem 0;
+}
+
+/* SOCIAL MEDIA ICONS */
+.footer__social-media-icons {
     display: flex;
     gap: 1rem;
     justify-content: center;
     margin-top: 6rem;
 }
 
-.page__social-media div {
+.footer__social-media-icons div {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -157,14 +165,4 @@ a {
     height: 2em;
     border-radius: 2em;
     border: 2px solid hsl(0, 0%, 59%, .3);
-}
-
-.page__footer {
-    color: var(--neutral-gray);
-    font-size: 0.9rem;
-    margin: 3rem 0 4rem 0;
-}
-
-@media only screen and (min-width: 768px) {
-    
 }

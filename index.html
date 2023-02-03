@@ -6,40 +6,37 @@
   <script src="https://kit.fontawesome.com/1c9b698be3.js" crossorigin="anonymous"></script>
 
   <link rel="stylesheet" href="./style.css">
-  <script defer src="./script.js"></script>
 
   <title>Frontend Mentor | Ping coming soon page</title>
 </head>
 <body>
-
-  <main class="page-wrapper">
-    <img src="./images/logo.svg" alt="Ping logo" class="site-logo">
-
-    <h1 class="page__header-title">We are launching <strong>soon!</strong></h1>
+  <div id="site-wrapper">
     
-    <p>Subscribe and get notified</p>
+    <header>
+      <img src="./images/logo.svg" alt="Ping" class="site-logo">
+    </header>
+
+    <main>
+      <section class="main-section">
+        <h1>We are launching <strong>soon!</strong></h1>
+        <p>Subscribe and get notified</p>
+        <form class="main-section__form">
+          <input type="text" placeholder="Your email address..." id="form__user-input">
+          <input type="submit" name="submit" id="submit" value="Notify Me">
+        </form>
+        <img class="main-section__illustration" src="./images/illustration-dashboard.png" alt="The ping app screenshot">
+      </section>
+    </main>
     
-    <form class="page__form" id="page__form">
-      <input type="text" placeholder="Your email address..." id="form__user-input">
-      <input type="submit" name="submit" id="submit" value="Notify Me">
-    </form>
+    <footer class="footer">
+      <div class="footer__social-media-icons">
+        <a href="#"><div><i class="fa fa-facebook"></i></div></a>
+        <a href="#"><div><i class="fa fa-twitter"></i></div></a>
+        <a href="#"><div><i class="fa fa-instagram"></i></div></a>
+      </div>
+      <p class="footer__text">&copy; Copyright Ping. All rights reserved.</p>
+    </footer>
 
-    <img src="./images/illustration-dashboard.png" alt="The ping app screenshot" class="page__image">
-
-    <div class="page__social-media">
-      <a href="#"><div><i class="fa fa-facebook"></i></div></a>
-      <a href="#"><div><i class="fa fa-twitter"></i></div></a>
-      <a href="#"><div><i class="fa fa-instagram"></i></div></a>
-    </div>
-
-    <p class="page__footer">&copy; Copyright Ping. All rights reserved.</p>
-  </main>
-
-  <!-- <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer> -->
+  </div>
 </body>
 </html>
