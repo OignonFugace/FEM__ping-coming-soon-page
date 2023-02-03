@@ -120,7 +120,7 @@ body {
 }
 
 #site-wrapper {
-    max-width: 640px;
+    max-width: 672px;
     margin: 0 auto;
     padding: 0 2rem;
 }
@@ -156,7 +156,7 @@ h1 strong {
 }
 
 
-/* FORM */
+/* MAIN */
 .main-section__text {
     font-size: 12px;
     margin-top: 15px;
@@ -168,7 +168,6 @@ h1 strong {
     gap: 10px;
     width: 85%;
     margin: 32px auto 0;
-    /* margin-top: 32px; */
 }
 
 .main-section__form input {
@@ -205,6 +204,9 @@ h1 strong {
 
 
 /* FOOTER */
+.footer {
+    margin-bottom: 37px;
+}
 .footer p {
     color: var(--neutral-gray);
     font-size: 10px;
@@ -233,6 +235,12 @@ h1 strong {
 
 
 @media screen and (min-width: 600px) {
+    /* GLOBALS & LAYOUT */
+    h1 {
+        font-size: 48px;
+        line-height: 60px;
+    }
+
     /* HEADER */
     .site-logo {
         margin-top: 80px;
@@ -240,12 +248,61 @@ h1 strong {
         width: 90px;
     }
 
-    h1 {
-        font-size: 48px;
-        line-height: 60px;
-    }
-
+    /* MAIN */
     .main-section__text {
         font-size: 20px;
+    }
+
+    .main-section__form {
+        flex-direction: row;
+        width: initial;
+        margin-top: 40px;
+    }
+
+    .main-section__form input {
+        flex-grow: 1;
+        padding-top: 18px;
+        padding-bottom: 18px;
+        border-radius: 3rem;
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 400;
+    }
+
+    /* ILLUSTRATION */
+    .main-section__illustration {
+        margin-top: 80px;
+    }
+
+
+    /* FOOTER */
+    .footer {
+        margin-bottom: 49px;
+    }
+
+    .footer p {
+        color: var(--neutral-gray);
+        font-size: 12px;
+        margin-top: 25px;
+    }
+
+    /* SOCIAL MEDIA ICONS */
+    .footer__social-media-icons {
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        margin-top: 72px;
+    }
+
+    .footer__social-media-icons div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--primary-blue);
+        font-size: 1rem;
+        width: 2rem;
+        height: 2rem;
+        border-radius: 2rem;
+        border: 1px solid var(--primary-blue-15);
     }
 }
