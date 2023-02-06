@@ -325,17 +325,23 @@ h1 strong {
         flex: 1 1 30%;
     }
 
+    .main-section__form > div {
+        position: relative;
+    }
+
     .form__message {
+        position: absolute;
         font-size: 12px;
         color: var(--secondary-light-red);
         font-style: italic;
+        padding-left: 32px;
         margin-top: 6px;
     }
 
 
     /* ILLUSTRATION */
     .main-section__illustration {
-        margin-top: 80px;
+        margin-top: 94px;
     }
 
 

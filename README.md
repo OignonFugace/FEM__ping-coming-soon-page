@@ -40,9 +40,11 @@ Vanilla HTML & CSS.
 
 
 ### Questions to community
+- As this is the first time that I was using `:valid` and `:invalid` pseudo selector, I am wondering if I have done things the proper way or not ? 
 
 
 ### Continued development
+- I may dive into a Javascript implementation of the validation feature for better customisation capabilities.
 
 
 ### Useful resources
