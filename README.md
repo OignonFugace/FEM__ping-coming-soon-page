@@ -30,10 +30,12 @@ This is a solution to the Ping Coming Soon Page Master challenge on [Frontend Me
 ## My process
 
 ### Built with
+Vanilla HTML & CSS.
 
 
 ### What I learned
-- I learned to style placeholder of thext input with the `::placeholder` selector : [How To Change Input Placeholder Color](https://www.w3schools.com/howto/howto_css_placeholder.asp).
+- Styling placeholder of text input with the `::placeholder` selector : [How To Change Input Placeholder Color](https://www.w3schools.com/howto/howto_css_placeholder.asp).
+- Using the [`:valid`](https://developer.mozilla.org/en-US/docs/Web/CSS/:valid) and [`:invalid`](https://developer.mozilla.org/en-US/docs/Web/CSS/:invalid) pseudo classes on text input elements to style markup based on validation state. 
 
 
 ### Questions to community
