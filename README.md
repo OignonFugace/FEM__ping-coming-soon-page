@@ -36,6 +36,7 @@ Vanilla HTML & CSS.
 ### What I learned
 - Styling placeholder of text input with the `::placeholder` selector : [How To Change Input Placeholder Color](https://www.w3schools.com/howto/howto_css_placeholder.asp).
 - Using the [`:valid`](https://developer.mozilla.org/en-US/docs/Web/CSS/:valid) and [`:invalid`](https://developer.mozilla.org/en-US/docs/Web/CSS/:invalid) pseudo classes on text input elements to style markup based on validation state. 
+- I had an issue with the way I defined `box-sizing`. Along with flex-box.
 
 
 ### Questions to community
