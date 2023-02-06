@@ -22,7 +22,12 @@
         <p class="main-section__text">Subscribe and get notified</p>
         <form class="main-section__form">
           <div>
-            <input type="email" placeholder="Your email address..." id="form__user-input">
+            <input 
+              type="email" 
+              pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)+$" 
+              title="Valid e-mail address including top-level domain" 
+              placeholder="Your email address..."
+            />
             <p class="form__message">Please provide a valid email address</p>
           </div>
           <input type="submit" name="submit" id="submit" value="Notify Me">
