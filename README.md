@@ -28,7 +28,7 @@ This is a solution to the Ping Coming Soon Page Master challenge on [Frontend Me
 ## My process
 
 ### Built with
-Vanilla HTML & CSS. As I found that this basic stack has the tools to do form validation on client-side, I choose not to use javascript. 
+Vanilla HTML & CSS. As I found that this basic stack has the tools to do form validation on client-side, I chose not to use javascript. 
 
 
 ### What I learned
