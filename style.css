@@ -215,6 +215,18 @@ h1 strong {
     margin-top: 2px;
 }
 
+.main-section__form input[type="email"]:valid ~ p {
+    display: none;
+}
+
+.main-section__form input[type="email"]:invalid {
+    border: 1px solid var(--secondary-light-red);
+}
+.main-section__form input[type="email"]:invalid ~ p {
+    display: block;
+}
+
+
 
 /* ILLUSTRATION */
 .main-section__illustration {
