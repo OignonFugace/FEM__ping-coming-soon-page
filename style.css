@@ -193,8 +193,6 @@ h1 strong {
     opacity: 1;
 }
 
-
-
 .main-section__form input[type="submit"] {
     cursor: pointer;
     color: white;
@@ -287,8 +285,7 @@ h1 strong {
         margin-top: 40px;
     }
 
-    .main-section__form input[type="email"] {
-        flex-grow: 2;
+    .main-section__form input {
         padding-top: 18px;
         padding-bottom: 18px;
         border-radius: 3rem;
@@ -297,8 +294,12 @@ h1 strong {
         font-weight: 400;
     }
 
+    .main-section__form input[type="email"] {
+        flex-basis: 100%;
+    }
+
     .main-section__form input[type="submit"] {
-        flex-grow: 1;
+        flex-basis: 30%;
     }
 
     .form__message {
