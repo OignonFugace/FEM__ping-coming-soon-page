@@ -33,6 +33,7 @@ This is a solution to the Ping Coming Soon Page Master challenge on [Frontend Me
 
 
 ### What I learned
+- I learned to style placeholder of thext input with the `::placeholder` selector : [How To Change Input Placeholder Color](https://www.w3schools.com/howto/howto_css_placeholder.asp).
 
 
 ### Questions to community
