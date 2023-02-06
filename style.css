@@ -189,11 +189,18 @@ h1 strong {
 }
 
 .main-section__form input[type="submit"] {
+    cursor: pointer;
     color: white;
     font-weight: 600;
     background-color: var(--primary-blue);
     border: 2px solid var(--primary-blue);
     box-shadow: 2px 2px 15px -2px rgb(0, 0, 0, .7);
+    transition: .15s ease;
+}
+
+.main-section__form input[type="submit"]:hover,
+.main-section__form input[type="submit"]:focus {
+    opacity: 0.8;
 }
 
 
@@ -231,6 +238,13 @@ h1 strong {
     height: 2rem;
     border-radius: 2rem;
     border: 1px solid var(--primary-blue-15);
+    transition: .15s ease;
+}
+
+.footer__social-media-icons div:hover, 
+.footer__social-media-icons div:focus {
+    color: white;
+    background-color: var(--primary-blue);
 }
 
 
